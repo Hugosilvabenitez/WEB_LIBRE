@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como se hacen </title>
+    <style>
+        body{
+            background-color: rgba(185, 239, 255, 0.8);
+        }
+        p{
+            font-size: 18px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            font-size:20px;
+            background-color: #2e8b57;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+           
+            transition: background-color 0.3s ease;
+        }
+        input[type="button"]:hover {
+            background-color: #1e5b3a;
+        }
+        h1 ,hr,br,p,u,div {
+            animation: aparicion 2s ease-in-out;
+        }
+        @keyframes aparicion {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+   <u><h1 style="text-align: center;">Proceso de Creación de los Señuelos</h1></u>
+    <br><hr>
+<u><h1>1.Selección de Materiales</h1></u>
+<p>El proceso comienza con la selección de materiales de alta calidad. Utilizamos maderas duras como el cedro y el balsa, además de metales resistentes y plásticos duraderos para asegurar que cada señuelo tenga una estructura robusta y una vida útil prolongada.</p>
+<hr>
+<u><h1>2.Diseño y Corte</h1></u>
+<p>Nuestros artesanos dibujan a mano los diseños de los señuelos, inspirados en las formas y movimientos naturales de los peces. Luego, estos diseños son transferidos a las piezas de madera o metal, que son cortadas con precisión para darles la forma deseada.</p>
+<hr>
+<u><h1>3.Esculpido y Lijado</h1></u>
+<p>Nuestros señuelos son pintados a mano utilizando pinturas no tóxicas y resistentes al agua. Los colores y patrones se aplican meticulosamente para imitar las características de los peces reales y atraer a los depredadores. Algunos señuelos también son decorados con purpurina y detalles adicionales para mejorar su atractivo visual.</p>
+<hr>
+<u><h1>4.Montaje de Componentes</h1></u>
+<p>Los ojos, anzuelos y otros componentes son montados cuidadosamente en cada señuelo. Utilizamos anzuelos de alta calidad y componentes de metal inoxidable para garantizar durabilidad y efectividad en cada pesca.</p>
+<hr>
+<u><h1>5.Pruebas de Agua</h1></u>
+<p>Cada señuelo es probado en agua para asegurarnos de que su movimiento y flotabilidad sean óptimos. Ajustamos cualquier detalle necesario para perfeccionar el rendimiento del señuelo.</p>
+<hr>
+<u><h1>6.Finalización y Empaque</h1></u>
+<p>Finalmente, los señuelos son revisados y terminados con una capa protectora de barniz o resina para mejorar su resistencia al agua y al desgaste. Luego, son empaquetados de manera segura y enviados a nuestros clientes.</p>
+<hr>
+<div class="button-container">
+    <a href="index.html"><input type="button" value="Inicio" class="aparicion"></a>
+    <input type="button" value="Visualización" class="aparicion" style="margin-left: 10px;" onclick="openFullscreen()">
+
+    <script>/* Sirve para que cuando al pinchar en el boton de visualizacion se abra un video en pantalla completa. Ademas en el boton hay que poner onclick para que al momento de clickar se abra el video*/
+    function openFullscreen() {
+        let url = "https://www.youtube.com/embed/od8UU0ZiOvM?autoplay=1&fs=1";
+        let win = window.open(url, '_blank');
+        if (win) {
+            win.moveTo(0, 0);
+            win.resizeTo(screen.width, screen.height);
+            win.focus();
+            win.onload = function() {
+                win.document.querySelector('video').requestFullscreen();
+            };
+        }
+    }
+    </script>
+    
+    
+
+    
+</div>
+</body>
+</html>

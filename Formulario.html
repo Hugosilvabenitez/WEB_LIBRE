@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+        * {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgba(185, 239, 255, 0.8);
+        }
+
+        .tabla {
+            border: 0;
+            padding: 12px;
+            border-spacing: 5px;
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        #p {
+            text-align: left;
+        }
+        .idioma-nivel {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        #comentario {
+            width: 100%;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        #preview {
+            width: 100%;
+            height: 100px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        input[type="button"], input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #2e8b57;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #1e5b3a;
+        }
+    </style>
+</head>
+<body>
+    <form action="hsilben979@g.educaand.es" method="post" enctype="text/plain">
+       <i><h2 align="center">DEJANOS TU OPINIÓN</h2></i>
+        <i><p style="text-align: center;"> ¡¡Tu opinón importa!!</p></i>
+        <hr>
+
+        <table class="tabla" border="1" cellpadding="10" cellspacing="5">
+            <tr>
+                <td style="background-color: #06a6c2;; width: 50%;" valign="top">
+                    <i><u><h3 style="font-family: Sans-serif">UNETE A NOSTROS</h3></u></i>
+                    <p id="p"><label for="Nombre">Escribe tu nombre </label></p>
+                    <input type="text" id="Nombre" name="Nombre" size="30" maxlength="30"/>
+                    
+                    <p id="p"><label for="Apellidos">Escribe tus Apellidos </label></p>
+                    <input type="text" id="Apellidos" name="Apellidos" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Teléfono">Tu Teléfono </label></p>
+                    <input type="text" id="Teléfono" name="Teléfono" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Dirección">Tu Dirección </label></p>
+                    <input type="text" id="Dirección" name="Dirección" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="DNI">DNI</label></p>
+                    <input type="text" id="DNI" name="DNI" size="30" maxlength="30"/><br>
+                    
+                    <p id="p"><label for="Correo">Tu Correo </label></p>
+                    <input type="text" id="Correo" name="Correo" size="30" maxlength="30"/><br>
+                </td>
+
+                <td style="background-color: #06a6c2;; width: 50%;" valign="top">
+                    <i><u><h3 style="font-family: Sans-serif">INTERESES EN LA PESCA</h3></u></i>
+                    <p id="p">¿Cuál es tu nivel de experiencia en la pesca?</p>
+                    <input type="checkbox" id="PRINCIPIANTE" name="PRINCIPIANTE">
+                    <label for="PRINCIPIANTE">Principiante</label><br>
+                    <input type="checkbox" id="INTERMEDIO" name="INTERMEDIO">
+                    <label for="INTERMEDIO">Intermedio</label><br>
+                    <input type="checkbox" id="AVANZADO" name="AVANZADO">
+                    <label for="AVANZADO">Avanzado</label><br>
+               
+        
+
+                    
+                
+                    
+                    <div class="transformado">
+                        <i><u><h3 style="font-family: Sans-serif">CAPTURAS</h3></u></i>
+                        <p id="p"><label for="captura">¿Qué pez ha sido el mejor que has capturado?</label></p>
+                        <select id="captura" name="captura">
+                            <option>Agua Dulce</option>
+                            <option>Agua Salada</option>
+                            <option>Ninguno</option>
+                        </select>
+                        <p id="p"><label for="captura">Pez</label></p>
+                        <input type="text" id="pez" name="pez" size="30" maxlength="30"/><br>
+                        <p id="p"><label for="captura">Peso</label></p>
+                        <input type="text" id="peso" name="peso" size="30" maxlength="30"/><br>
+                    </div>
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="background-color: #5bb37d; width: 50%;" valign="top">
+                            <i><u><h3 style="font-family: Sans-serif">SEÑUELOS</h3></u></i>
+                            <p id="p">Elige los que más te gustan</p>
+                            <div style="padding: 10px;">
+                                <p>
+                                    <input type="checkbox" id="Agua dulce" name="Agua dulce">
+                                    <label for="Agua dulce">Agua dulce</label><br/>
+                                    <select name="ingles_hablado">
+                                        <option>Te gusta: Bajo</option>
+                                        <option>Te gusta: Medio</option>
+                                        <option>Te gusta: Alto</option>
+                                    </select>
+                                    <select name="ingles_escrito">
+                                        <option>Uso: Nunca</option>
+                                        <option>Uso: A veces</option>
+                                        <option>Uso: Siempre</option>
+                                    </select>
+                                </p>
+                    
+                                <p>
+                                    <input type="checkbox" id="Spinning" name="Spinning">
+                                    <label for="Spinning">Spinning</label><br/>
+                                    <select name="Spinning">
+                                        <option>Te gusta: Bajo</option>
+                                        <option>Te gusta: Medio</option>
+                                        <option>Te gusta: Alto</option>
+                                    </select>
+                                    <select name="Spinning">
+                                        <option>Uso: Nunca</option>
+                                        <option>Uso: A veces</option>
+                                        <option>Uso: Siempre</option>
+                                    </select>
+                                </p>
+                    
+                                <p>
+                                    <input type="checkbox" id="Curriacan" name="Curriacan">
+                                    <label for="Curriacan">Curriacan</label><br/>
+                                    <select name="Curriacan-gusto">
+                                        <option>Te gusta: Bajo</option>
+                                        <option>Te gusta: Medio</option>
+                                        <option>Te gusta: Alto</option>
+                                    </select>
+                                    <select name="Curriacan-uso">
+                                        <option>Uso: Nunca</option>
+                                        <option>Uso: A veces</option>
+                                        <option>Uso: Siempre</option>
+                                    </select>
+                                </p>
+                    
+                                <p>
+                                    <input type="checkbox" id="Otro" name="Otro">
+                                    <label for="Otro">Otro</label>
+                                    <input type="text" name="otro_idioma" placeholder="Especificar" style="width: 100px;">
+                                    <br>
+                                    <select name="otro">
+                                        <option>Te gusta: Bajo</option>
+                                        <option>Te gusta: Medio</option>
+                                        <option>Te gusta: Alto</option>
+                                    </select>
+                                    <select name="otro">
+                                        <option>Uso: Nunca</option>
+                                        <option>Uso: A veces</option>
+                                        <option>Uso: Siempre</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </td>
+                    
+                        <td style="background-color:#5bb37d; width: 50%;" valign="top">
+                            <i><u><h3 style="font-family: Sans-serif">SUGERENCIAS</h3></u></i>
+                            <p id="p"><label for="comentario">Deja tu aportacion</label></p>
+                            <textarea id="comentario" name="comentario" rows="3" cols="40" 
+                                      oninput="document.getElementById('preview').innerText = this.value"></textarea><!-- Esto hace que el texto que se esta escribiendo al momento se este escribiendo en otro apartado al mismo tiempo-->
+                            <p><b>Seguro que quiueres enviar los siguiente?:</b></p>
+                            <p id="preview"></p>
+                        </td>
+                    </tr>
+                    
+                    <tr style="background-color: rgba(185, 239, 255, 0.8);">
+                        <td colspan="2" align="center" style="padding: 15px;">
+                            <input type="submit" value="Enviar formulario">
+                            <input type="reset" value="Borrar datos">
+                            <a href="index.html"><input type="button" value="Inicio"></a>
+                        </td>
+                    </tr>
+                    
+        </table>
+    </form>
+</body>
+</html>
